@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.bg {
+  background: url('/bg-laptop.svg') center/cover;
+}
+
+.navlinks a {
+  @apply font-semibold text-[1.1rem] px-4 py-2 hover:bg-[#15762a] hover:text-white hover:rounded-full transition-all duration-300 ease-in-out;
+}
+
+.navlinks a.active {
+  @apply bg-[#15762a] text-white rounded-full transition-all duration-300 ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  html {
+    font-size: 85%;
+  }
+
+  .bg {
+    background: url(/bg-tab-hor.svg) center/cover no-repeat;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 960px) {
+  .bg {
+    background: url(/bg-tab-ver.svg) center/cover no-repeat;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 70%;
+  }
+
+  .bg {
+    background: url(/bg-tab-ver.svg) center/cover no-repeat;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .bg {
+    background: url(/bg-phn.svg) center/cover no-repeat;
+  }
+}
