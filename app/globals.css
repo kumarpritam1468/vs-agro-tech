@@ -13,90 +13,10 @@ main {
 }
 
 .bg {
-  background: url('/bg-laptop.svg') center/cover;
+  background: url('/bg4.jpeg') rgba(0, 0, 0, 0.4) right/cover;
+  background-blend-mode: darken;
 }
 
-/* From Uiverse.io by css.btns-io */
-/* .btn {
-  --color: #15762a;
-  background: white;
-  font-family: inherit;
-  display: inline-block;
-  width: 8em;
-  height: 2.6em;
-  line-height: 2.5em;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 2rem;
-  font-weight: 500;
-  color: black;
-}
-
-.btn:hover{
-  color: white;
-}
-
-.btn:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: var(--color);
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-.btn:before {
-  top: 100%;
-  left: 100%;
-  transition: all 0.7s;
-}
-
-.btn:hover:before {
-  top: -30px;
-  left: -30px;
-}
-
-.btn:active:before {
-  background: #3a0ca3;
-  transition: background 0s;
-} */
-
-/* From Uiverse.io by adamgiebl */
-/* .btn {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
-}
-
-.btn svg {
-  margin-right: 6px;
-}
-
-.btn:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
-}
-
-.btn:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-} */
-
-/* From Uiverse.io by gharsh11032000 */
 .btn {
   position: relative;
   display: flex;
@@ -109,7 +29,7 @@ main {
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: Black;
+  color: black;
   background: #CFEBC9;
   box-shadow: 0 0 0 2px #15762a;
   cursor: pointer;
@@ -140,7 +60,7 @@ main {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #25ec17;
+  background-color: #ffffff;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -189,7 +109,7 @@ main {
 
 
 .navlinks a {
-  @apply font-semibold text-[1.1rem] px-4 py-2 hover:bg-[#15762a] hover:text-white hover:rounded-full transition-all duration-300 ease-in-out;
+  @apply font-medium text-[1.1rem] px-4 py-2 hover:bg-[#15762a] text-white hover:rounded-full transition-all duration-300 ease-in-out;
 }
 
 .navlinks a.active {
@@ -206,30 +126,10 @@ main {
   html {
     font-size: 85%;
   }
-
-  .bg {
-    background: url(/bg-tab-hor.svg) center/cover no-repeat;
-  }
-}
-
-@media screen and (max-width: 1024px) and (min-height: 960px) {
-  .bg {
-    background: url(/bg-tab-ver.svg) center/cover no-repeat;
-  }
 }
 
 @media screen and (max-width: 620px) {
   html {
     font-size: 70%;
-  }
-
-  .bg {
-    background: url(/bg-tab-ver.svg) center/cover no-repeat;
-  }
-}
-
-@media screen and (max-width:350px) {
-  .bg {
-    background: url(/bg-phn.svg) center/cover no-repeat;
   }
 }

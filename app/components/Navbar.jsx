@@ -11,8 +11,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='fixed top-0 bg-[#66C15F] h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6'>
+    <nav className='fixed top-0 backdrop-blur-2xl max-md:bg-white/10 h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6'>
+      <div className="flex items-center gap-2">
       <img src="/logo.png" alt="Logo" className=' w-20' />
+      <h2 className=' font-medium md:hidden text-2xl text-white'> VS Agrotech</h2>
+      </div>
 
       <div className='navlinks flex gap-1 max-md:hidden'>
         <a href='/' className={`${pathname === '/' ? 'active' : ''}`}>Home</a>
@@ -22,7 +25,7 @@ const Navbar = () => {
         <a href='/contact' className={`${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
       </div>
       <div className='md:hidden'>
-        <Hamburger size={25} onToggle={toggled => {
+        <Hamburger size={25} color='#ffffff' onToggle={toggled => {
           if (toggled) {
             setMenuOpen(true)
           } else {
