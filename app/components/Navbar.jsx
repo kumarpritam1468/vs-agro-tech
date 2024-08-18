@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { Squash as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
@@ -11,10 +12,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='fixed top-0 backdrop-blur-2xl max-md:bg-white/10 h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6'>
+    <nav className='fixed top-0 backdrop-blur-2xl bg-black/60 h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6 z-50 border-b border-b-black shadow-2xl'>
       <div className="flex items-center gap-2">
-      <img src="/logo.png" alt="Logo" className=' w-20' />
-      <h2 className=' font-medium md:hidden text-2xl text-white'> VS Agrotech</h2>
+        <Image src="/logo.png" alt="Logo" width={80} height={80} />
+        <h2 className=' font-medium md:hidden text-2xl text-white'> VS Agrotech</h2>
       </div>
 
       <div className='navlinks flex gap-1 max-md:hidden'>
