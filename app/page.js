@@ -54,7 +54,7 @@ export default function Home() {
         <div className=" relative w-fit h-fit max-md:w-4/5">
           <div className=" w-full h-full bg-green-600 absolute top-4 left-4 z-20"></div>
           <div className=" w-full h-full bg-green-300 absolute top-8 left-8 z-10"></div>
-          <Image src='/calf.jpg' alt="Calf" width={500} height={500} className=" relative z-30" />
+          <Image src='/calf.jpg' alt="Calf" width={450} height={450} className=" relative z-30" />
         </div>
 
         <div className=" w-1/2 max-md:w-4/5 flex flex-col gap-6 max-md:text-center max-md:items-center">
@@ -81,7 +81,7 @@ export default function Home() {
         <div className=" relative w-fit h-fit max-md:w-4/5">
           <div className=" w-full h-full bg-green-600 absolute top-4 left-4 z-20"></div>
           <div className=" w-full h-full bg-green-300 absolute top-8 left-8 z-10"></div>
-          <Image src='/pigs.jpg' alt="Calf" width={500} height={500} className=" relative z-30" />
+          <Image src='/pigs.jpg' alt="Calf" width={450} height={450} className=" relative z-30" />
         </div>
 
         <div className=" w-1/2 max-md:w-4/5 flex flex-col gap-6 max-md:text-center max-md:items-center">
