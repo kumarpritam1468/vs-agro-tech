@@ -14,17 +14,17 @@ main {
 
 .bg {
   background: url('/bg4.jpeg') rgba(0, 0, 0, 0.4) right/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
 .bg1 {
   background: url('/bg2.jpg') rgba(255, 255, 255, 0.85) center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: lighten;
 }
 .bg2 {
   background: url('/bg3.jpg') rgba(255, 255, 255, 0.85) center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: lighten;
 }
 
@@ -121,7 +121,11 @@ main {
 
 
 .navlinks a {
-  @apply font-medium text-[1.1rem] px-4 py-2 hover:bg-[#32ce53] text-white hover:text-black hover:rounded-full transition-all duration-300 ease-in-out;
+  @apply font-medium text-[1.1rem] px-4 py-2 w-fit hover:bg-[#32ce53] text-white hover:text-black hover:rounded-full transition-all duration-300 ease-in-out;
+}
+
+.navlinksPhn a {
+  @apply text-black text-2xl px-6;
 }
 
 .navlinks a.active {
