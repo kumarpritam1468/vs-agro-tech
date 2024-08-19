@@ -25,8 +25,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div className=' flex flex-col justify-between pl-8 max-md:pl-0 border-l max-md:border-none border-l-gray-400'>
-                    <div >
+                <div className=' flex flex-col pl-8 max-md:pl-0 border-l max-md:border-none border-l-gray-400'>
                         <h3 className=' font-medium text-lg mb-4'>Follow Us:</h3>
                         <div className=" flex gap-4 text-xl text-gray-500">
                             <BsTwitterX className=" cursor-pointer hover:text-black" />
@@ -37,7 +36,6 @@ const Footer = () => {
                             <FaWhatsapp className=" cursor-pointer hover:text-green-500" />
                             <FaTelegram className=" cursor-pointer hover:text-blue-500" />
                         </div>
-                    </div>
                 </div>
             </div>
             <div className=" h-[1px] w-full my-6 sm:mx-auto bg-gray-400 lg:my-8" />
