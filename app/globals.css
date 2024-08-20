@@ -13,19 +13,27 @@ main {
 }
 
 .bg {
-  background: url('/bg4.jpeg') rgba(0, 0, 0, 0.4) right/cover;
+  background: url('/bg.jpeg') rgba(0, 0, 0, 0.4) right/cover;
   /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
-.bg1 {
+
+.bg2 {
   background: url('/bg2.jpg') rgba(255, 255, 255, 0.85) center/cover;
   /* background-attachment: fixed; */
   background-blend-mode: lighten;
 }
-.bg2 {
+
+.bg3 {
   background: url('/bg3.jpg') rgba(255, 255, 255, 0.85) center/cover;
   /* background-attachment: fixed; */
   background-blend-mode: lighten;
+}
+
+.bg4 {
+  background: url('/bg4.jpg') rgba(0, 0, 0, 0.4) left/cover;
+  /* background-attachment: fixed; */
+  background-blend-mode: darken;
 }
 
 .btn {
@@ -35,8 +43,7 @@ main {
   gap: 4px;
   padding: 8px 36px;
   width: fit-content;
-  border: 4px solid;
-  border-color: transparent;
+  border: 1px solid transparent;
   font-size: 16px;
   background-color: inherit;
   border-radius: 100px;
@@ -52,7 +59,7 @@ main {
 .btn svg {
   position: absolute;
   width: 24px;
-  fill: #15762a;
+  fill: black;
   z-index: 9;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -90,6 +97,7 @@ main {
   color: #212121;
   border-radius: 12px;
   background: transparent;
+  border-color: black;
 }
 
 .btn:hover .arr-1 {
