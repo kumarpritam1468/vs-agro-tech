@@ -104,14 +104,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg4 h-fit flex flex-col justify-center gap-10 px-16 py-20">
+      <section className="bg4 flex flex-col justify-center gap-10 px-16 py-20">
         <h1 className=" text-5xl font-medium text-white underline underline-offset-8">Top Products</h1>
 
         <div className=" w-full flex max-md:flex-col justify-between gap-16 flex-wrap">
           {topProducts.map((item, index) => (
-            <div className=" flex-1 flex flex-col items-center justify-center gap-4 backdrop-blur-sm p-3 h-fit rounded-2xl border-2 border-green-500 bg-green-100/80 text-black" key={index}>
+            <div className=" flex-1 flex flex-col items-center justify-center gap-4 backdrop-blur-sm p-3 h-fit  border-2 border-green-500 bg-green-100/80 text-black" key={index}>
 
-              <Image src={item.imgUrl} alt={item.name} width={300} height={300} className=" rounded-2xl w-full" />
+              <Image src='/calf.jpg' alt={item.name} width={200} height={200} className="w-full" />
 
               <h2 className=" font-medium text-2xl">{item.name}</h2>
 

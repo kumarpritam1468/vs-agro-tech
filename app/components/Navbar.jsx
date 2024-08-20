@@ -7,7 +7,6 @@ import { Squash as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   const [menuOpen, setMenuOpen] = useState(false);
 

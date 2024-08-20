@@ -35,6 +35,11 @@ main {
   /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
+.bg5 {
+  background: url('/bg4.jpg') rgba(0, 0, 0, 0.6) left/cover;
+  /* background-attachment: fixed; */
+  background-blend-mode: darken;
+}
 
 .btn {
   position: relative;
@@ -138,6 +143,10 @@ main {
 
 .navlinks a.active {
   @apply bg-[#32ce53] text-black rounded-full transition-all duration-300 ease-in-out;
+}
+
+.contact-input{
+  @apply  w-5/6 max-lg:w-full bg-transparent border border-white px-4 py-2 rounded-lg placeholder:text-white;
 }
 
 @media screen and (min-width: 1440px) {
