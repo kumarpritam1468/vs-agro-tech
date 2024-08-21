@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { topProducts } from "./data/data";
+import { FaArrowRight } from "react-icons/fa6";
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
   return (
@@ -13,33 +15,17 @@ export default function Home() {
 
           <div className=" flex gap-8 max-md:gap-4 font-medium mt-4">
             <button className="btn max-md:scale-90">
-              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
+              <FaArrowRight className="arr-2" />
               <span className="text">Products</span>
               <span className="circle"></span>
-              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
+              <FaArrowRight className="arr-1" />
             </button>
 
             <button className="btn max-md:scale-90">
-              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
+              <FaArrowRight className="arr-2" />
               <span className="text">Contact Us</span>
               <span className="circle"></span>
-              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
+              <FaArrowRight className="arr-1" />
             </button>
           </div>
         </div>
@@ -61,18 +47,10 @@ export default function Home() {
           <h1 className=" text-5xl font-medium">Cattle foods</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit, sequi minus perspiciatis culpa consequatur voluptatibus aliquid fugiat molestias sunt quibusdam repellat nesciunt, distinctio error ex doloribus tempora, labore ad suscipit praesentium voluptas repudiandae! Expedita possimus saepe, facilis eos omnis iusto? Voluptate quam libero distinctio odit dicta dolor eaque ad.</p>
           <button className="btn max-md:scale-90">
-            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
+            <FaArrowRight className="arr-2" />
             <span className="text">Explore</span>
             <span className="circle"></span>
-            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
+            <FaArrowRight className="arr-1" />
           </button>
         </div>
       </section>
@@ -88,18 +66,10 @@ export default function Home() {
           <h1 className=" text-5xl font-medium">Swine foods</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit, sequi minus perspiciatis culpa consequatur voluptatibus aliquid fugiat molestias sunt quibusdam repellat nesciunt, distinctio error ex doloribus tempora, labore ad suscipit praesentium voluptas repudiandae! Expedita possimus saepe, facilis eos omnis iusto? Voluptate quam libero distinctio odit dicta dolor eaque ad.</p>
           <button className="btn max-md:scale-90">
-            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
+            <FaArrowRight className="arr-2" />
             <span className="text">Explore</span>
             <span className="circle"></span>
-            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
+            <FaArrowRight className="arr-1" />
           </button>
         </div>
       </section>
@@ -109,29 +79,7 @@ export default function Home() {
 
         <div className=" w-full flex max-md:flex-col justify-between gap-16 flex-wrap">
           {topProducts.map((item, index) => (
-            <div className=" flex-1 flex flex-col items-center justify-center gap-4 backdrop-blur-sm p-3 h-fit  border-2 border-green-500 bg-green-100/80 text-black" key={index}>
-
-              <Image src='/calf.jpg' alt={item.name} width={200} height={200} className="w-full" />
-
-              <h2 className=" font-medium text-2xl">{item.name}</h2>
-
-              {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit error dolorum quam repellat quis cupiditate, minima culpa esse natus?</p> */}
-
-              <button className="btn max-md:scale-90">
-                <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-                <span className="text">View Now</span>
-                <span className="circle"></span>
-                <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+            <ProductCard key={index} name={item.name} />
           ))}
         </div>
       </section>
