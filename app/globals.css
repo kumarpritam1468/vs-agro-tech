@@ -14,13 +14,13 @@ main {
 
 .bg {
   background: url('/bg.jpeg') rgba(0, 0, 0, 0.4) right/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
 
 .bg2 {
   background: url('/bg2.jpg') rgba(255, 255, 255, 0.85) center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: lighten;
 }
 
@@ -61,6 +61,11 @@ main {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.btn2{
+  background: #3bea61;
+  box-shadow: 0 0 0 1px black;
+}
+
 .btn .arr-1,
 .btn .arr-2 {
   position: absolute;
@@ -89,6 +94,10 @@ main {
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn2 .circle{
+  background: rgb(110, 255, 13);
 }
 
 .btn .text {

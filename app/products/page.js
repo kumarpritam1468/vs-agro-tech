@@ -8,9 +8,9 @@ const page = () => {
             <div className=' w-full mt-10 '>
                 <h1 className=" text-5xl font-medium text-black underline underline-offset-8 text-center">Cattle Foods</h1>
 
-                <div className=' w-full mt-8 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
+                <div className=' w-full mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
                     {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} />
+                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
                     ))}
                 </div>
             </div>
@@ -18,12 +18,12 @@ const page = () => {
             <div className=' w-full mt-20 '>
                 <h1 className=" text-5xl font-medium text-black underline underline-offset-8 text-center">Swine Foods</h1>
 
-                <div className=' w-full mt-8 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
+                <div className=' w-full mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
                     {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} />
+                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
                     ))}
                     {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} />
+                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
                     ))}
                 </div>
             </div>

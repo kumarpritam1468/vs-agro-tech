@@ -10,7 +10,7 @@ export default function Home() {
 
         <div className=" w-2/3 max-md:w-full flex flex-col justify-center items-center gap-5 text-white text-center">
           <h1 className=" font-semibold text-5xl">V S Agrotech</h1>
-          <h2 className=" font-medium text-4xl">With a vision to provide healthy and good to the animals</h2>
+          <p className=" font-medium text-4xl">With a vision to provide healthy and good to the animals</p>
           <p className=" font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque officiis voluptate non quia consequatur illum a expedita sunt voluptatum aliquam!</p>
 
           <div className=" flex gap-8 max-md:gap-4 font-medium mt-4">
@@ -77,9 +77,9 @@ export default function Home() {
       <section className="bg4 flex flex-col justify-center gap-10 px-16 py-20">
         <h1 className=" text-5xl font-medium text-white underline underline-offset-8">Top Products</h1>
 
-        <div className=" w-full flex max-md:flex-col justify-between gap-16 flex-wrap">
+        <div className=" w-full flex max-md:flex-col justify-between gap-12 flex-wrap">
           {topProducts.map((item, index) => (
-            <ProductCard key={index} name={item.name} />
+            <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
           ))}
         </div>
       </section>
