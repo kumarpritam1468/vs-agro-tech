@@ -1,31 +1,33 @@
 import React from 'react'
-import { topProducts } from '../data/data'
-import ProductCard from '../components/ProductCard'
+import Image from 'next/image'
+import { FaArrowRight } from 'react-icons/fa6'
 
 const page = () => {
     return (
-        <section className='bg2 min-h-[100svh] h-fit pt-[10svh] px-12 pb-10'>
-            <div className=' w-full mt-10 '>
-                <h1 className=" text-5xl font-medium text-black underline underline-offset-8 text-center">Cattle Foods</h1>
+        <section className='bg2-dark h-[100svh] max-md:min-h-[100svh] max-md:h-fit pt-[10svh] flex max-md:flex-col justify-center items-center gap-10'>
+            <div className=' p-2 rounded-2xl bg-green-100/80 hover:backdrop-blur-lg hover:bg-transparent hover:scale-105 hover:text-white transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-4 cursor-pointer w-fit border-2 border-green-500'>
+                <Image src="/calf.jpg" alt="Calf" width={200} height={200} className=' w-80  rounded-2xl' />
 
-                <div className=' w-full mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
-                    {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
-                    ))}
-                </div>
+                <h2 className=" font-medium text-2xl ">Cattle Foods</h2>
+
+                <a href='/products/cattle' className="btn btn2 max-md:scale-90">
+                    <FaArrowRight className="arr-2" />
+                    <span className="text">Explore Now</span>
+                    <span className="circle"></span>
+                    <FaArrowRight className="arr-1" />
+                </a>
             </div>
+            <div className=' p-2 rounded-2xl bg-green-100/80 hover:backdrop-blur-lg hover:bg-transparent hover:text-white hover:scale-105 transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-4 cursor-pointer w-fit border-2 border-green-500'>
+                <Image src="/pigs.jpg" alt="Calf" width={200} height={200} className=' w-80 rounded-2xl' />
 
-            <div className=' w-full mt-20 '>
-                <h1 className=" text-5xl font-medium text-black underline underline-offset-8 text-center">Swine Foods</h1>
+                <h2 className=" font-medium text-2xl ">Swine Foods</h2>
 
-                <div className=' w-full mt-8 grid grid-cols-2 max-md:grid-cols-1 gap-x-16 gap-y-10 '>
-                    {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
-                    ))}
-                    {topProducts.map((item, index) => (
-                        <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
-                    ))}
-                </div>
+                <a href='/products/swine' className="btn btn2 max-md:scale-90">
+                    <FaArrowRight className="arr-2" />
+                    <span className="text">Explore Now</span>
+                    <span className="circle"></span>
+                    <FaArrowRight className="arr-1" />
+                </a>
             </div>
         </section>
     )

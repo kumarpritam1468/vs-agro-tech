@@ -24,10 +24,22 @@ main {
   background-blend-mode: lighten;
 }
 
+.bg2-dark{
+  background: url('/bg2.jpg') rgba(0, 0, 0, 0.3) center/cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
 .bg3 {
   background: url('/bg3.jpg') rgba(255, 255, 255, 0.85) center/cover;
   /* background-attachment: fixed; */
   background-blend-mode: lighten;
+}
+
+.bg3-dark {
+  background: url('/bg3.jpg') rgba(0, 0, 0, 0.4) center/cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
 }
 
 .bg4 {

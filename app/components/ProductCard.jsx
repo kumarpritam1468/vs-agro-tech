@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 const ProductCard = ({ name, imgUrl }) => {
     return (
-        <div className=" flex-1 flex items-center justify-center gap-4 backdrop-blur-sm p-3 border-2 border-green-500 bg-green-100/80 text-black rounded-2xl">
+        <div className=" w-[45%] max-md:w-11/12 flex items-center justify-center gap-4 backdrop-blur-sm p-3 border-2 border-green-500 bg-green-100/80 text-black rounded-2xl hover:scale-[1.03] transition-all duration-300 ease-in-out">
 
             <Image src={imgUrl} alt={name} width={200} height={200} className="w-1/3 rounded-2xl" />
 
