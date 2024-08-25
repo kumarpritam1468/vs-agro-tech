@@ -2,6 +2,7 @@ import Image from "next/image";
 import { topProducts } from "./data/data";
 import { FaArrowRight } from "react-icons/fa6";
 import ProductCard from "./components/ProductCard";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -79,10 +80,12 @@ export default function Home() {
 
         <div className=" w-full flex max-md:flex-col justify-between gap-12 flex-wrap">
           {topProducts.map((item, index) => (
-            <ProductCard key={index} name={item.name} imgUrl={item.imgUrl} />
+            <ProductCard key={index} index={item.id} type={item.type} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
           ))}
         </div>
       </section>
+
+      <Footer/>
     </main>
   );
 }

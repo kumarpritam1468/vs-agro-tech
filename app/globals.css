@@ -26,7 +26,7 @@ main {
 
 .bg2-dark{
   background: url('/bg2.jpg') rgba(0, 0, 0, 0.3) center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
 
@@ -38,7 +38,7 @@ main {
 
 .bg3-dark {
   background: url('/bg3.jpg') rgba(0, 0, 0, 0.4) center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
 
