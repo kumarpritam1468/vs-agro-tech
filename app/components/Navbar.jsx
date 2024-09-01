@@ -20,7 +20,6 @@ const Navbar = () => {
       <div className='navlinks flex gap-3 max-md:hidden'>
         <a href='/' className={`${pathname === '/' ? 'active' : ''}`}>Home</a>
         <a href='/products' className={`${pathname === '/products' ? 'active' : ''}`}>Products</a>
-        <a href='/gallery' className={`${pathname === '/gallery' ? 'active' : ''}`}>Gallery</a>
         <a href='/about' className={`${pathname === '/about' ? 'active' : ''}`}>About</a>
         <a href='/contact' className={`${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
       </div>
@@ -38,7 +37,6 @@ const Navbar = () => {
         <div className=' flex flex-col gap-4'>
           <a href='/' className={`${pathname === '/' ? 'active' : ''}`}>Home</a>
           <a href='/products' className={`${pathname === '/products' ? 'active' : ''}`}>Products</a>
-          <a href='/gallery' className={`${pathname === '/gallery' ? 'active' : ''}`}>Gallery</a>
           <a href='/about' className={`${pathname === '/about' ? 'active' : ''}`}>About</a>
           <a href='/contact' className={`${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
         </div>

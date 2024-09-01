@@ -12,22 +12,21 @@ export default function Home() {
         <div className=" w-2/3 max-md:w-full flex flex-col justify-center items-center gap-5 text-white text-center">
           <h1 className=" font-semibold text-5xl">V S Agrotech</h1>
           <p className=" font-medium text-4xl">With a vision to provide healthy and good to the animals</p>
-          <p className=" font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque officiis voluptate non quia consequatur illum a expedita sunt voluptatum aliquam!</p>
 
           <div className=" flex gap-8 max-md:gap-4 font-medium mt-4">
-            <button className="btn max-md:scale-90">
+            <a href="/products" className="btn max-md:scale-90">
               <FaArrowRight className="arr-2" />
-              <span className="text">Products</span>
+              <span className="text">Discover</span>
               <span className="circle"></span>
               <FaArrowRight className="arr-1" />
-            </button>
+            </a>
 
-            <button className="btn max-md:scale-90">
+            <a href="/contact" className="btn max-md:scale-90">
               <FaArrowRight className="arr-2" />
               <span className="text">Contact Us</span>
               <span className="circle"></span>
               <FaArrowRight className="arr-1" />
-            </button>
+            </a>
           </div>
         </div>
 
@@ -46,13 +45,13 @@ export default function Home() {
 
         <div className="w-1/2 max-md:w-4/5 flex flex-col gap-6 max-md:text-center max-md:items-center">
           <h1 className=" text-5xl font-medium">Cattle foods</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit, sequi minus perspiciatis culpa consequatur voluptatibus aliquid fugiat molestias sunt quibusdam repellat nesciunt, distinctio error ex doloribus tempora, labore ad suscipit praesentium voluptas repudiandae! Expedita possimus saepe, facilis eos omnis iusto? Voluptate quam libero distinctio odit dicta dolor eaque ad.</p>
-          <button className="btn max-md:scale-90">
+          <p>Feed is one of the major requirement in a farm. A good feed can determine the growth and health of the animal. We are producing the complete range for better growth and proper health of Cattle. All of our products are specially designed by very experienced and technically well versed nutritionists. The product is made through steam technology to nurture proper nutritions from the ingredients.</p>
+          <a href="/products/cattle" className="btn max-md:scale-90">
             <FaArrowRight className="arr-2" />
             <span className="text">Explore</span>
             <span className="circle"></span>
             <FaArrowRight className="arr-1" />
-          </button>
+          </a>
         </div>
       </section>
 
@@ -65,13 +64,13 @@ export default function Home() {
 
         <div className=" w-1/2 max-md:w-4/5 flex flex-col gap-6 max-md:text-center max-md:items-center">
           <h1 className=" text-5xl font-medium">Swine foods</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit, sequi minus perspiciatis culpa consequatur voluptatibus aliquid fugiat molestias sunt quibusdam repellat nesciunt, distinctio error ex doloribus tempora, labore ad suscipit praesentium voluptas repudiandae! Expedita possimus saepe, facilis eos omnis iusto? Voluptate quam libero distinctio odit dicta dolor eaque ad.</p>
-          <button className="btn max-md:scale-90">
+          <p>Feed is one of the major requirement in a farm. A good feed can determine the growth and health of the animal. We are producing the complete range for better growth and proper health of Swine. All of our products are specially designed by very experienced and technically well versed nutritionists. The product is made through steam technology to nurture proper nutritions from the ingredients.</p>
+          <a href="/products/swine" className="btn max-md:scale-90">
             <FaArrowRight className="arr-2" />
             <span className="text">Explore</span>
             <span className="circle"></span>
             <FaArrowRight className="arr-1" />
-          </button>
+          </a>
         </div>
       </section>
 
@@ -85,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </main>
   );
 }
