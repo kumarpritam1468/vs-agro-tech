@@ -12,7 +12,7 @@ const page = () => {
 
                 <a href='/products/cattle' className="btn btn2 max-md:scale-90">
                     <FaArrowRight className="arr-2" />
-                    <span className="text">Explore Now</span>
+                    <span className="text">Explore</span>
                     <span className="circle"></span>
                     <FaArrowRight className="arr-1" />
                 </a>
@@ -24,7 +24,7 @@ const page = () => {
 
                 <a href='/products/swine' className="btn btn2 max-md:scale-90">
                     <FaArrowRight className="arr-2" />
-                    <span className="text">Explore Now</span>
+                    <span className="text">Explore</span>
                     <span className="circle"></span>
                     <FaArrowRight className="arr-1" />
                 </a>

@@ -15,7 +15,7 @@ const ProductCard = ({ index, type, name, imgUrl, desc }) => {
 
                 <a href={`/products/${type}/${index}`} className="btn btn2 max-md:scale-[0.8]">
                     <FaArrowRight className="arr-2" />
-                    <span className="text">View Now</span>
+                    <span className="text">View</span>
                     <span className="circle"></span>
                     <FaArrowRight className="arr-1" />
                 </a>

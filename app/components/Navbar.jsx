@@ -24,7 +24,7 @@ const Navbar = () => {
         <a href='/contact' className={`${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
       </div>
       <div className='md:hidden'>
-        <Hamburger size={25} color='#ffffff' onToggle={toggled => {
+        <Hamburger aria-label="Menu" size={25} color='#ffffff' onToggle={toggled => {
           if (toggled) {
             setMenuOpen(true)
           } else {
