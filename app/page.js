@@ -1,20 +1,34 @@
+"use client"
+
 import Image from "next/image";
 import { topProducts } from "./data/data";
 import { FaArrowRight } from "react-icons/fa6";
 import ProductCard from "./components/ProductCard";
 import Footer from "./components/Footer";
+import Videos from "./components/Videos";
+
+// import { motion } from "framer-motion";
+// import { slideUp, slideLeft, slideRight } from "./framer-configs/framerConfigs";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
       <section className="bg pt-[10svh] h-[100svh] max-md:px-6 max-md:pb-8 justify-center flex max-md:flex-col items-center gap-16 2xl:gap-40">
-
         <div className=" w-2/3 max-md:w-full flex flex-col justify-center items-center gap-5 text-white text-center">
-          <h1 className=" font-semibold text-5xl">V S Agrotech</h1>
-          <p className=" font-medium text-4xl">With a vision to provide healthy and good to the animals</p>
+          <h1
+            className=" font-semibold text-center text-7xl max-xl:text-6xl tracking-[0.08em]"
+          >
+            VS AGROTECH
+          </h1>
+          <p
+            className=" text-3xl max-xl:text-[1.3rem] text-center"
+          >
+            With a vision to provide healthy and good to the animals
+          </p>
 
           <div className=" flex gap-8 max-md:gap-4 font-medium mt-4">
-            <a href="/products" className="btn max-md:scale-90">
+            {/* <a href="/products" className="btn max-md:scale-90">
               <FaArrowRight className="arr-2" />
               <span className="text">Discover</span>
               <span className="circle"></span>
@@ -26,7 +40,14 @@ export default function Home() {
               <span className="text">Contact Us</span>
               <span className="circle"></span>
               <FaArrowRight className="arr-1" />
-            </a>
+            </a> */}
+
+            <Link class="btn3" href="/products">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Discover All</span>
+            </Link>
           </div>
         </div>
 
@@ -83,6 +104,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <Videos />
 
       <Footer />
     </main>

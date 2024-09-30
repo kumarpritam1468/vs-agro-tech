@@ -13,7 +13,7 @@ main {
 }
 
 .bg {
-  background: url('/bg.jpeg') rgba(0, 0, 0, 0.4) right/cover;
+  background: url('/bgNew.jpg') rgba(0, 0, 0, 0.5) bottom/cover;
   /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
@@ -24,7 +24,7 @@ main {
   background-blend-mode: lighten;
 }
 
-.bg2-dark{
+.bg2-dark {
   background: url('/bg2.jpg') rgba(0, 0, 0, 0.4) center/cover;
   /* background-attachment: fixed; */
   background-blend-mode: darken;
@@ -47,10 +47,18 @@ main {
   /* background-attachment: fixed; */
   background-blend-mode: darken;
 }
+
 .bg5 {
   background: url('/bg4.jpg') rgba(0, 0, 0, 0.6) left/cover;
   /* background-attachment: fixed; */
   background-blend-mode: darken;
+}
+
+.outline {
+  -webkit-text-stroke: 2px white;
+  /* backdrop-filter: blur(8px); */
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -73,7 +81,7 @@ main {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.btn2{
+.btn2 {
   background: #3bea61;
   box-shadow: 0 0 0 1px black;
 }
@@ -108,7 +116,7 @@ main {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.btn2 .circle{
+.btn2 .circle {
   background: rgb(110, 255, 13);
 }
 
@@ -150,6 +158,97 @@ main {
   opacity: 1;
 }
 
+/* From Uiverse.io by cssbuttons-io */
+.btn3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+}
+
+.btn3 {
+  width: 12rem;
+  height: auto;
+}
+
+.btn3 .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #3bea61;
+  border-radius: 1.625rem;
+}
+
+.btn3 .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black;
+}
+
+.btn3 .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.btn3 .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid black;
+  border-right: 0.125rem solid black;
+  transform: rotate(45deg);
+}
+
+.btn3 .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem 0;
+  margin: 0 0 0 2.5rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn3:hover .circle {
+  width: 100%;
+}
+
+.btn3:hover .circle .icon.arrow {
+  background: black;
+  transform: translate(1rem, 0);
+}
+
+.btn3:hover .button-text {
+  color: black;
+}
+
 
 .navlinks a {
   @apply font-medium text-[1.1rem] px-4 py-2 w-fit hover:bg-[#32ce53] text-white hover:text-black hover:rounded-full transition-all duration-300 ease-in-out;
@@ -163,8 +262,8 @@ main {
   @apply bg-[#32ce53] text-black rounded-full transition-all duration-300 ease-in-out;
 }
 
-.contact-input{
-  @apply  w-5/6 max-lg:w-full bg-transparent border border-white px-4 py-2 rounded-lg placeholder:text-white;
+.contact-input {
+  @apply w-5/6 max-lg:w-full bg-transparent border border-white px-4 py-2 rounded-lg placeholder:text-white;
 }
 
 @media screen and (min-width: 1440px) {

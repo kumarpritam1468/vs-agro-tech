@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Squash as Hamburger } from 'hamburger-react'
@@ -9,12 +9,31 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+       if(pathname === '/'){
+        const isScrolled = window.scrollY > 100;
+        setScrolled(isScrolled);
+      } else {
+        setScrolled(true);
+      }
+    };
+
+    handleScroll();
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
-    <nav className='fixed top-0 backdrop-blur-2xl bg-black/60 h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6 z-50 border-b border-b-black'>
-      <div className="flex items-center gap-2">
+    <nav className={`fixed top-0 ${scrolled ? 'bg-black/60 backdrop-blur-md' : 'bg-transparent'} h-[10svh] w-full flex justify-between items-center px-12 max-md:px-6 z-50 transition-all duration-700 ease-in-out`}>
+      <div className="flex items-center gap-2 lg:gap-6">
         <Image src="/logo.png" alt="Logo" width={80} height={80} />
-        <h2 className=' font-medium md:hidden text-2xl text-white'> VS Agrotech</h2>
+        <h2 className=' font-medium text-2xl text-white'> VS Agrotech</h2>
       </div>
 
       <div className='navlinks flex gap-3 max-md:hidden'>
