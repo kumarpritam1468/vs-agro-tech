@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-       if(pathname === '/'){
+      if (pathname === '/') {
         const isScrolled = window.scrollY > 100;
         setScrolled(isScrolled);
       } else {
@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       <div className={`navlinks navlinksPhn absolute w-[60vw] h-[90dvh] top-[10svh] md:hidden pl-8 py-10 flex flex-col justify-between bg-white border-l-2 border-l-gray-600 transition-all duration-300 ease-in-out ${menuOpen ? 'right-0' : '-right-[60vw]'}`}>
-        <div className=' flex flex-col gap-4'>
+        <div className=' flex flex-col gap-4'  onClick={() => setMenuOpen(prev => !prev)}>
           <a href='/' className={`${pathname === '/' ? 'active' : ''}`}>Home</a>
           <Link href='/products' className={`${pathname === '/products' ? 'active' : ''}`}>Products</Link>
           <Link href='/about' className={`${pathname === '/about' ? 'active' : ''}`}>About</Link>
