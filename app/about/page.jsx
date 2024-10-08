@@ -9,8 +9,7 @@ const page = () => {
                 <div className=' flex flex-col'>
                     <Image src='/logo.png' alt='Logo' width={100} height={100} />
                     <h1 className=' font-medium text-3xl mt-4'>V S Agrotech,</h1>
-                    <h2 className=' text-xl'>Mrs Varsha Agarwal,</h2>
-                    <h2 className=' text-xl'>Year of establishment. 4 December 2022</h2>
+                    <h2 className=' text-xl'>Year of establishment: 2022</h2>
                     <h2 className=' text-lg'>Go seva learnt from the teaching of lord Krishna</h2>
                     <p className=' text-base font-normal mt-6'>
                         IDCO Plot NO.1, <br />

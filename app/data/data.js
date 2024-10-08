@@ -9,7 +9,7 @@ export const topProducts = [
     {
         id:2,
         type:"cattle",
-        name: "VSA Chokada Supreme",
+        name: "VSA  Supreme",
         imgUrl: "/products/supreme.jpg",
         desc: "For cows giving 8 to 14 litres of milk, With added vitamins and minerals, High immunition power"
     }
@@ -50,43 +50,7 @@ export const swineFoods = [
 
 export const cattleFoods = [
     {
-        name: "VSA Chokada Popular",
-        imgUrl: "/products/popular.jpg",
-        desc: "For cows giving less milk, For Heifer and Dry animals, With added vitamins and minerals, Available at low price",
-        ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
-        feedFeatures: [
-            "Complete balanced compound cattle feed for both cow an buffalo",
-            "Urea free which will not have any adverse effect on catte health",
-            "Enriched with by-pass protein and by-pass fat to enhance milk volume and quality",
-            "Fortified with vitamins, minerals and protein for daily diet of animals",
-            "For milking cow and buffalo it's a complete feed which enables higher productivity",
-        ],
-        feedProcess: [
-            "To be fed dry or soaked in water for 1 Hour.",
-            "To shift from old feed to reduce old feed gradually and add new feed gradually to replace old feed completely in a weeks time.",
-            "To get better milk yield and good health of cattle, farmer needs to give dry and green fodder twice in a day and sufficient water."
-        ]
-    },
-    {
-        name: "VSA Chokada Premium",
-        imgUrl: "/products/premium.jpg",
-        desc: "For cows giving 5 to 8 litres of milk, With added vitamins and minerals",
-        ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
-        feedFeatures: [
-            "Complete balanced compound cattle feed for both cow an buffalo",
-            "Urea free which will not have any adverse effect on catte health",
-            "Enriched with by-pass protein and by-pass fat to enhance milk volume and quality",
-            "Fortified with vitamins, minerals and protein for daily diet of animals",
-            "For milking cow and buffalo it's a complete feed which enables higher productivity",
-        ],
-        feedProcess: [
-            "To be fed dry or soaked in water for 1 Hour.",
-            "To shift from old feed to reduce old feed gradually and add new feed gradually to replace old feed completely in a weeks time.",
-            "To get better milk yield and good health of cattle, farmer needs to give dry and green fodder twice in a day and sufficient water."
-        ]
-    },
-    {
-        name: "VSA Chokada Supreme",
+        name: "VSA  Supreme",
         imgUrl: "/products/supreme.jpg",
         desc: "For cows giving 8 to 14 litres of milk, With added vitamins and minerals, High immunition power",
         ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
@@ -104,7 +68,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA Chokada Champion",
+        name: "VSA  Champion",
         imgUrl: "/products/champion.jpg",
         desc: "For cows giving 14 to 20 litres of milk, With more productivity and proteins, With added By-pass proteins and fats, Increases reproduction ability",
         ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
@@ -122,7 +86,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA Chokada Royal",
+        name: "VSA  Royal",
         imgUrl: "/products/royal.jpg",
         desc: "For cows giving more than 22 litres of milk, With added By-pass Protein and fats, For both Cow and Buffalo",
         ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
@@ -140,7 +104,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA Chokada Doodh Makhan",
+        name: "VSA  Doodh Makhan",
         imgUrl: "/products/doodhMakhan.jpg",
         desc:"",
         ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
@@ -158,9 +122,45 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA Chokada Supreme Gold",
+        name: "VSA  Supreme Gold",
         imgUrl: "/products/supremeGold.jpg",
         desc: "",
+        ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
+        feedFeatures: [
+            "Complete balanced compound cattle feed for both cow an buffalo",
+            "Urea free which will not have any adverse effect on catte health",
+            "Enriched with by-pass protein and by-pass fat to enhance milk volume and quality",
+            "Fortified with vitamins, minerals and protein for daily diet of animals",
+            "For milking cow and buffalo it's a complete feed which enables higher productivity",
+        ],
+        feedProcess: [
+            "To be fed dry or soaked in water for 1 Hour.",
+            "To shift from old feed to reduce old feed gradually and add new feed gradually to replace old feed completely in a weeks time.",
+            "To get better milk yield and good health of cattle, farmer needs to give dry and green fodder twice in a day and sufficient water."
+        ]
+    },
+    {
+        name: "VSA  Popular",
+        imgUrl: "/products/popular.jpg",
+        desc: "For cows giving less milk, For Heifer and Dry animals, With added vitamins and minerals, Available at low price",
+        ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
+        feedFeatures: [
+            "Complete balanced compound cattle feed for both cow an buffalo",
+            "Urea free which will not have any adverse effect on catte health",
+            "Enriched with by-pass protein and by-pass fat to enhance milk volume and quality",
+            "Fortified with vitamins, minerals and protein for daily diet of animals",
+            "For milking cow and buffalo it's a complete feed which enables higher productivity",
+        ],
+        feedProcess: [
+            "To be fed dry or soaked in water for 1 Hour.",
+            "To shift from old feed to reduce old feed gradually and add new feed gradually to replace old feed completely in a weeks time.",
+            "To get better milk yield and good health of cattle, farmer needs to give dry and green fodder twice in a day and sufficient water."
+        ]
+    },
+    {
+        name: "VSA  Premium",
+        imgUrl: "/products/premium.jpg",
+        desc: "For cows giving 5 to 8 litres of milk, With added vitamins and minerals",
         ingredients: "Maize, Soya, DORB, Rice polish, Chuni, Broken rice, Molasses, Various oil cakes, Salt, Mineral mixture, Multi-vitamins and Amino acids",
         feedFeatures: [
             "Complete balanced compound cattle feed for both cow an buffalo",

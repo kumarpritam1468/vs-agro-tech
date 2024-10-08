@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { toast, Toaster } from "react-hot-toast"
 
 const page = () => {
     const form = useRef();
@@ -18,6 +19,7 @@ const page = () => {
             .then(
                 () => {
                     setLoading(false);
+                    toast.success("Message Sent");
                     console.log('SUCCESS!');
                 },
                 (error) => {
@@ -55,6 +57,7 @@ const page = () => {
                     </div>
                 </form>
             </div>
+            <Toaster />
         </section>
     )
 }
