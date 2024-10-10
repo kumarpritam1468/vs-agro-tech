@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import Videos from "./components/Videos";
+// import Videos from "./components/Videos";
 import Hero from "./components/Hero";
 import CattleFoodHome from "./components/CattleFoodHome";
 import SwineFoodHome from "./components/SwineFoodHome";
@@ -15,7 +15,7 @@ export default function Home() {
       <CattleFoodHome />
       <SwineFoodHome />
       <TopProducts />
-      <Videos />
+      {/* <Videos /> */}
       <Footer />
     </main>
   );

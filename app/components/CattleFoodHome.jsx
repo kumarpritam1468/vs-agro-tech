@@ -30,7 +30,7 @@ const CattleFoodHome = () => {
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    Cattle foods
+                    Cattle
                 </motion.h1>
                 <motion.p
                     variants={slideUp(0.2)}
@@ -38,7 +38,12 @@ const CattleFoodHome = () => {
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    Feed is one of the major requirement in a farm. A good feed can determine the growth and health of the animal. We are producing the complete range for better growth and proper health of Cattle. All of our products are specially designed by very experienced and technically well versed nutritionists. The product is made through steam technology to nurture proper nutritions from the ingredients.
+                    Cow can never be separated from our society. Referred as “MAA” or “MATA”
+                    cow is loved just like mother is said to have all Gods in her body. Closely
+                    associated since more than 12000 years is integrate part of our daily life. Lord
+                    Krishna having cannot be imagined without cow. Cow give us Milk, dung, urine
+                    etc.
+
                 </motion.p>
                 <Link href="/products/cattle">
                     <motion.div

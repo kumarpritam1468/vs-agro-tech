@@ -22,7 +22,7 @@ const Hero = () => {
                     initial={"initial"}
                     animate={"animate"}
                 >
-                    With a vision to provide healthy and good to the animals
+                    A vision to provide healthy and good to the animals
                 </motion.p>
 
                 <motion.div

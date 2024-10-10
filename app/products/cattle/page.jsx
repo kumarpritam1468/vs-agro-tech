@@ -17,19 +17,64 @@ const page = () => {
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    Cattle Foods
+                    Cattle
                 </motion.h1>
 
-                <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 py-10'
+                <motion.h2
+                    className=' text-center text-white mt-8 text-2xl'
                     variants={slideRight(0.2)}
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    {cattleFoods.map((item, index) => (
+                    Cow can never be separated from our society. Referred as “MAA” or “MATA”
+                    cow is loved just like mother is said to have all Gods in her body. Closely
+                    associated since more than 12000 years is integrate part of our daily life. Lord
+                    Krishna having cannot be imagined without cow. Cow give us Milk, dung, urine
+                    etc.
+                </motion.h2>
+
+                <motion.div
+                    className=' flex flex-col gap-2 mt-6 text-white ml-6'
+                    variants={slideRight(0.4)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                >
+                    <h2 className=' text-3xl font-semibold underline text-center'>Pellet Feed</h2>
+                </motion.div>
+
+                <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 py-10'
+                    variants={slideRight(0.6)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                >
+                    {cattleFoods.slice(0, 5).map((item, index) => (
                         <ProductCard key={index} index={index} type={"cattle"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
                     ))}
                 </motion.div>
+
+                {/* <motion.div
+                    className=' flex flex-col gap-2 mt-6 text-white ml-6'
+                    variants={slideRight(0)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                >
+                    <h2 className=' text-3xl font-semibold underline text-center'>Mash Feed</h2>
+                </motion.div>
+
+                <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 py-10'
+                    variants={slideRight(0)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                >
+                    {cattleFoods.slice(5, 7).map((item, index) => (
+                        <ProductCard key={index} index={index} type={"cattle"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
+                    ))}
+                </motion.div> */}
 
 
                 <h1 className=' font-semibold underline underline-offset-4 text-4xl mt-6 text-center text-white'>Nutrients Table</h1>
@@ -40,6 +85,7 @@ const page = () => {
                         <thead>
                             <tr className=' text-lg max-md:text-base text-green-800'>
                                 <th>Nutrients</th>
+                                <th>Royal</th>
                                 <th>Champion</th>
                                 <th>Supreme</th>
                                 <th>Premium</th>
@@ -50,6 +96,7 @@ const page = () => {
                             {nutrientsTable.map((data, index) => (
                                 <tr key={index}>
                                     <th> {data.head} </th>
+                                    <td> {data.royal} </td>
                                     <td> {data.champion} </td>
                                     <td> {data.supreme} </td>
                                     <td> {data.premium} </td>
@@ -68,20 +115,22 @@ const page = () => {
                         <thead>
                             <tr className=' text-lg max-md:text-base text-green-800 text-center'>
                                 <th>Product</th>
-                                <th>Body Maintainance <br /> Cow</th>
-                                <th>Body Maintainance <br /> Buffalo</th>
-                                <th>Milk Yield <br /> Cow </th>
-                                <th>Milk Yield <br /> Buffalo</th>
+                                <th>Milk <br /> Production(ltr)</th>
+                                <th>Concentrate <br /> Feed(kg)</th>
+                                <th>Green <br /> Fodder(kg)</th>
+                                <th>Dry <br /> Fodder(kg)</th>
+                                <th>Water(ltr)</th>
                             </tr>
                         </thead>
                         <tbody>
                             {dosesTable.map((data, index) => (
-                                <tr key={index}>
+                                <tr key={index} className=' text-center'>
                                     <th> {data.head} </th>
-                                    <td> {data.cowBM} </td>
-                                    <td> {data.buffaloBM} </td>
-                                    <td> {data.cowMY} </td>
-                                    <td> {data.buffaloMY} </td>
+                                    <td> {data.milkProd} </td>
+                                    <td> {data.concentrate} </td>
+                                    <td> {data.grnFodder} </td>
+                                    <td> {data.dryFodder} </td>
+                                    <td> {data.water} </td>
                                 </tr>
                             ))}
                         </tbody>

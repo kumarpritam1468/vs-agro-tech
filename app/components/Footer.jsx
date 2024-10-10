@@ -15,8 +15,8 @@ const Footer = () => {
                 <div className=' flex flex-col w-1/2 max-md:w-full'>
                     <Image src='/logo.png' alt='Logo' width={100} height={100} />
                     <h1 className=' font-medium text-xl mt-4'>V S Agrotech,</h1>
-                    <h2 className=' text-lg'>Mrs Varsha Agarwal</h2>
-                    <h3 className=' text-lg'>Customer helpline- 82495-10313(10 am to 5 pm) </h3>
+                    <h2 className=' text-lg'><span className=' font-semibold'>E-mail:</span> vsagrotech81@gmail.com</h2>
+                    <h3 className=' text-lg'><span className=' font-semibold'>Customer helpline:</span> 82495-10313(10 am to 5 pm) </h3>
                     <p className=' text-sm font-normal mt-4'>
                         IDCO Plot NO.1, <br />
                         Indrani Patna industrial Area post, <br />
@@ -25,7 +25,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div className=' flex flex-col pl-8 max-md:pl-0 border-l max-md:border-none border-l-gray-400'>
+                {/* <div className=' flex flex-col pl-8 max-md:pl-0 border-l max-md:border-none border-l-gray-400'>
                         <h3 className=' font-medium text-lg mb-4'>Follow Us:</h3>
                         <div className=" flex gap-4 text-xl text-gray-500">
                             <BsTwitterX className=" cursor-pointer hover:text-black" />
@@ -36,7 +36,7 @@ const Footer = () => {
                             <FaWhatsapp className=" cursor-pointer hover:text-green-500" />
                             <FaTelegram className=" cursor-pointer hover:text-blue-500" />
                         </div>
-                </div>
+                </div> */}
             </div>
             <div className=" h-[1px] w-full my-6 sm:mx-auto bg-gray-400 lg:my-8" />
             <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">VS Agrotech</a>. All Rights Reserved.</span>

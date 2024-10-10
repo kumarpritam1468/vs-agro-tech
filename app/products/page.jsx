@@ -8,7 +8,7 @@ const page = () => {
             <div className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-4 cursor-pointer w-fit border-2 border-green-500'>
                 <Image src="/calf.jpg" alt="Calf" width={200} height={200} className=' w-80  rounded-2xl' />
 
-                <h2 className=" font-medium text-2xl ">Cattle Foods</h2>
+                <h2 className=" font-medium text-2xl ">Cattle</h2>
 
                 <a href='/products/cattle' className="btn btn2 max-md:scale-90">
                     <FaArrowRight className="arr-2" />
@@ -20,7 +20,7 @@ const page = () => {
             <div className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-4 cursor-pointer w-fit border-2 border-green-500'>
                 <Image src="/pigs.jpg" alt="Calf" width={200} height={200} className=' w-80 rounded-2xl' />
 
-                <h2 className=" font-medium text-2xl ">Swine Foods</h2>
+                <h2 className=" font-medium text-2xl ">Swine</h2>
 
                 <a href='/products/swine' className="btn btn2 max-md:scale-90">
                     <FaArrowRight className="arr-2" />

@@ -30,7 +30,7 @@ const SwineFoodHome = () => {
           whileInView={'animate'}
           viewport={{ once: true }}
         >
-          Swine foods
+          Swine
 
         </motion.h1>
         <motion.p
@@ -39,7 +39,11 @@ const SwineFoodHome = () => {
           whileInView={'animate'}
           viewport={{ once: true }}
         >
-          Feed is one of the major requirement in a farm. A good feed can determine the growth and health of the animal. We are producing the complete range for better growth and proper health of Swine. All of our products are specially designed by very experienced and technically well versed nutritionists. The product is made through steam technology to nurture proper nutritions from the ingredients.
+          Swine are friend to us since 7000 B.C. Pigs were domesticated almost 10000
+          years back and are part of civilization since then. We can see various examples
+          in different mythologies too. The skin of Pig is so similar that it can be used for
+          skin replacement of human. Pigs are farmed not only for their meat but have a
+          number of other uses like in medicines, paint brushes, grease, paints, etc
         </motion.p>
         <Link href="/products/swine">
           <motion.div
