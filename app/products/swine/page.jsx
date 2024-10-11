@@ -117,7 +117,7 @@ const page = () => {
                     </table>
                 </div>
 
-                <a href='/products/swine/all' className=' p-2 mx-auto rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-4 cursor-pointer w-fit border-2 border-green-500 mb-4'>
+                <a href='/products/swine/all' className=' p-2 mx-auto rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-justify gap-4 cursor-pointer w-fit border-2 border-green-500 mb-4'>
                     <Image src="/pigs.jpg" alt="Calf" width={200} height={200} className=' w-80 rounded-2xl' />
 
                     <h2 className=" font-medium text-2xl ">Swine Feed</h2>

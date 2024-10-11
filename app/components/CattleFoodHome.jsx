@@ -22,7 +22,7 @@ const CattleFoodHome = () => {
                 <Image src='/calf.jpg' alt="Calf" width={450} height={450} className=" relative z-30" />
             </motion.div>
 
-            <div className="w-1/2 max-md:w-4/5 flex flex-col gap-6 text-center items-center">
+            <div className="w-1/2 max-md:w-4/5 flex flex-col gap-6 text-justify ">
                 <motion.h1
                     className=" text-5xl font-medium"
                     variants={slideUp(0)}

@@ -18,7 +18,7 @@ const page = () => {
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    <h2 className=' text-3xl font-semibold underline text-center'>Pellet Feed</h2>
+                    <h2 className=' text-3xl font-semibold underline'>Pellet Feed</h2>
                 </motion.div>
                 <motion.p
                     variants={slideRight(0.2)}

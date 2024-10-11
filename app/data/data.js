@@ -2,14 +2,14 @@ export const topProducts = [
     {
         id: 0,
         type: "cattle",
-        name: "VSA  Royal",
+        name: " Royal",
         imgUrl: "/products/royal.jpg",
         desc: "Rich in by-pass protein and by-pass fat has high TDN for high milk producing cattle. It is best feed for both Cow and Buffalo giving more than 18 ltrs milk"
     },
     {
         id: 2,
         type: "swine",
-        name: "VSA Grower",
+        name: "Grower",
         imgUrl: "/products/grower.jpg",
         desc: "",
     },
@@ -17,35 +17,35 @@ export const topProducts = [
 
 export const swineFoods = [
     {
-        name: "VSA Lactation",
+        name: "Lactation",
         imgUrl: "/products/lactation.jpg",
         desc: "",
         details: "New Babies depend on the milk of their mother for the required nutrition. Lactation is meant for the milking mother.It has high fat and protein to give energy to the mother and the new born child.It has high TDN for better milk production. This feed shall be given from 2 weeks before the birth of piglets up to the piglet reaches a body weight of around 8 kgs.It will take around 3 weeks to achieve the desired growth. A lactating sow require 25-40 ltrs of water for better health and milk production. The TDS of water should be checked regularly to avoid health issues.",
         feeding:"The feed should be given at the rate of 15-20 grams per k.g. of body weight. The feeding quantity should be adjusted on the weekly basis as per the body weight. The total feed shall be divided in 3-4 equal batches and given to pigs after frequent intervals. The average FCR from Starter to Finisher feed is from 1.75-2 kg of feed per kg of gain in body weight. Sufficient clean and fresh water shall be provided for good body maintenance. The TDS of the water shall be checked regularly."
     },
     {
-        name: "VSA Starter",
+        name: "Starter",
         imgUrl: "/products/starter.jpg",
         desc: "",
         details: "Starter is the first feed which the weaner start eating. It is one of the most crucial phase in the growth of a piglet. Our feed contains a balanced diet for better growth and immunity of the babies. The feed is rich in protein and fat and contains antibiotic to save the child from the diseases it may suffer at the younger age. The feed contains high TDN for fast growth of the piglet. It is given from the body weight of around 8 kgs to around 30 kgs. The piglet get the weight at around 4 weeks of age. Around 1-5 ltrs of fresh and clean water depending on the body weight is required for a weaner for proper growth.",
         feeding:"The feed should be given at the rate of 15-20 grams per k.g. of body weight. The feeding quantity should be adjusted on the weekly basis as per the body weight. The total feed shall be divided in 3-4 equal batches and given to pigs after frequent intervals. The average FCR from Starter to Finisher feed is from 1.75-2 kg of feed per kg of gain in body weight. Sufficient clean and fresh water shall be provided for good body maintenance. The TDS of the water shall be checked regularly."
     },
     {
-        name: "VSA Grower",
+        name: "Grower",
         imgUrl: "/products/grower.jpg",
         desc: "",
         details: "Blooming youth, the pigs are more active and full of energy at the growing stage. The protein rich feed is formulated with good quantity of fat for fast growth. Grower is fed from the body weight of around 30 kgs to around 70 kgs. The growth is attained from the age of around 7 weeks to 15 weeks. Around 4-8 ltrs of fresh and clean water depending on the body weight is required for a growing pigs.",
         feeding:"The feed should be given at the rate of 15-20 grams per k.g. of body weight. The feeding quantity should be adjusted on the weekly basis as per the body weight. The total feed shall be divided in 3-4 equal batches and given to pigs after frequent intervals. The average FCR from Starter to Finisher feed is from 1.75-2 kg of feed per kg of gain in body weight. Sufficient clean and fresh water shall be provided for good body maintenance. The TDS of the water shall be checked regularly."
     },
     {
-        name: "VSA Finisher",
+        name: "Finisher",
         imgUrl: "/products/finisher.jpg",
         desc: "",
         details: "Fatteners are pigs at the latter stage of rearing. The pigs are matured and need to add weight to be fit for sale. High TDN feed increase the body weight fast and attain proper weight. Finisher is the feed given to fully grownup pig. Finisher feed is given to pigs from body weight of around 70 kgs to around 100 kgs or marketable. The proper weight reaches from the age of around 15 weeks to 23 weeks. Around 7-10 ltrs of fresh and clean water depending on the body weight is required for a finishing pigs.",
         feeding:"The feed should be given at the rate of 15-20 grams per k.g. of body weight. The feeding quantity should be adjusted on the weekly basis as per the body weight. The total feed shall be divided in 3-4 equal batches and given to pigs after frequent intervals. The average FCR from Starter to Finisher feed is from 1.75-2 kg of feed per kg of gain in body weight. Sufficient clean and fresh water shall be provided for good body maintenance. The TDS of the water shall be checked regularly."
     },
     {
-        name: "VSA Gestation",
+        name: "Gestation",
         imgUrl: "/products/gestation.jpg",
         desc: "",
         details: "The gilt and Sow which have been served and impregnated. The pigs have different requirements. The fat in the feed is maintained to facilitate easy delivery. The TDN and protein should be sufficient for proper growth of the fetus. The standard fetal period is around 114 days.Gestation feed is formulated specifically for good fetus health and easy delivery. Around 12-20 ltrs of fresh and clean water is essential for healthy mother and fetus",
@@ -55,7 +55,7 @@ export const swineFoods = [
 
 export const cattleFoods = [
     {
-        name: "VSA  Royal",
+        name: " Royal",
         imgUrl: "/products/royal.jpg",
         desc: "Rich in by-pass protein and by-pass fat has high TDN for high milk producing cattle. It is best feed for both Cow and Buffalo giving more than 18 ltrs milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",
@@ -76,7 +76,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Champion",
+        name: " Champion",
         imgUrl: "/products/champion.jpg",
         desc: "Having high protein and fat is best for Cow and Buffalo giving 12-20 ltrs milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",
@@ -97,7 +97,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Supreme",
+        name: " Supreme",
         imgUrl: "/products/supreme.jpg",
         desc: "For the Cows giving 8-12 ltr milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",
@@ -118,7 +118,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Premium",
+        name: " Premium",
         imgUrl: "/products/premium.jpg",
         desc: "For the Cows giving 4-8 ltr milk",
         ingredients: "Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.",
@@ -138,7 +138,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Popular",
+        name: " Popular",
         imgUrl: "/products/popular.jpg",
         desc: "For Dry and low yielding cows",
         ingredients: "Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.",
@@ -158,7 +158,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Doodh Makhan",
+        name: " Doodh Makhan",
         imgUrl: "/products/doodhMakhan.jpg",
         desc: "Having high protein and fat is best for Cow and Buffalo giving 12-20 ltrs milk",
         ingredients: "Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.",
@@ -178,7 +178,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Supreme Gold",
+        name: " Supreme Gold",
         imgUrl: "/products/supremeGold.jpg",
         desc: "For the Cows giving 8-12 ltr milk",
         ingredients: "Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.",

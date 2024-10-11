@@ -36,7 +36,7 @@ const page = () => {
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
-                    className=' text-xl font-semibold mt-2 text-center text-white px-36 max-md:px-6 max-lg:px-12'
+                    className=' text-xl font-semibold mt-2 text-justify text-white px-36 max-md:px-6 max-lg:px-12'
                 >
                     We can also produce customized feed as per the requirement of cow
                 </motion.p>

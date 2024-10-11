@@ -51,7 +51,7 @@ const page = () => {
                                 <Image src={product.imgUrl} alt="Swine Food" width={250} height={450} className=" relative z-30" />
                             </motion.div>
 
-                            <div className="w-full py-12 max-md:py-6 max-md:px-6 h-full flex flex-col gap-6 max-md:text-center max-md:items-center">
+                            <div className="w-full py-12 max-md:py-6 max-md:px-6 h-full flex flex-col gap-6 max-md:text-justify max-md:items-center">
                                 <motion.h1
                                     className=" text-5xl font-medium"
                                     variants={slideUp(0.2)}

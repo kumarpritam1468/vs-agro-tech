@@ -7,9 +7,9 @@ import { slideRight } from "../framer-configs/framerConfigs"
 const Hero = () => {
     return (
         <section className="bg pt-[10svh] h-[100svh] max-md:px-6 max-md:pb-8 justify-center flex max-md:flex-col items-center gap-16 2xl:gap-40">
-            <div className=" w-2/3 max-md:w-full flex flex-col justify-center items-center gap-5 text-white text-center">
+            <div className=" w-2/3 max-md:w-full flex flex-col justify-center items-center gap-5 text-white text-justify">
                 <motion.h1
-                    className=" font-semibold text-center text-7xl max-xl:text-6xl tracking-wide"
+                    className=" font-semibold text-justify text-7xl max-xl:text-6xl tracking-wide"
                     variants={slideRight(0)}
                     initial={"initial"}
                     animate={"animate"}
@@ -17,7 +17,7 @@ const Hero = () => {
                     VS AGROTECH
                 </motion.h1>
                 <motion.p
-                    className=" text-3xl max-xl:text-[1.3rem] text-center"
+                    className=" text-3xl max-xl:text-[1.3rem] text-justify"
                     variants={slideRight(0.2)}
                     initial={"initial"}
                     animate={"animate"}

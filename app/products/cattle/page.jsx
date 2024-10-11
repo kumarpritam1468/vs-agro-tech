@@ -46,7 +46,7 @@ const page = () => {
 
                 <div className="flex gap-4 px-36 max-md:px-6 max-lg:px-12 justify-center items-center w-full h-fit mt-6">
                     <Image src="/bis.jpg" width={100} height={60} alt="BIS Mark" />
-                    <p className=" text-2xl mt-8 text-white text-center">BIS certificate under IS:2052:2009 CM/L-5200121874</p>
+                    <p className=" text-2xl mt-8 text-white text-justify">BIS certificate under IS:2052:2009 CM/L-5200121874</p>
                 </div>
 
 
@@ -56,7 +56,7 @@ const page = () => {
                     <table className="table bg-white table-zebra rounded-none table-lg max-md:table-sm w-9/12 max-md:w-full mx-auto">
                         {/* head */}
                         <thead>
-                            <tr className=' text-lg max-md:text-base text-green-800 text-center'>
+                            <tr className=' text-lg max-md:text-base text-green-800 text-justify'>
                                 <th>Product</th>
                                 <th>Milk <br /> Production(ltr)</th>
                                 <th>Concentrate <br /> Feed(kg)</th>
@@ -112,7 +112,7 @@ const page = () => {
                 <div
                     className=" mt-4 flex max-md:flex-col w-full justify-center items-center gap-6 mb-4"
                 >
-                    <Link href='/products/cattle/pellet' className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-2 cursor-pointer w-fit border-2 border-green-500'>
+                    <Link href='/products/cattle/pellet' className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-justify gap-2 cursor-pointer w-fit border-2 border-green-500'>
                         <Image src="/pellet.png" alt="Calf" width={200} height={200} className=' w-60 rounded-2xl' />
 
                         <h2 className=" font-medium text-2xl ">Pellet Feed</h2>
@@ -124,7 +124,7 @@ const page = () => {
                             <FaArrowRight className="arr-1" />
                         </div>
                     </Link>
-                    <Link href='/products/cattle/mash' className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-center gap-2 cursor-pointer w-fit border-2 border-green-500'>
+                    <Link href='/products/cattle/mash' className=' p-2 rounded-2xl bg-green-100/80 hover:scale-[1.02] transition-all duration-500 ease-in-out flex flex-col items-center text-justify gap-2 cursor-pointer w-fit border-2 border-green-500'>
                         <Image src="/mash.png" alt="Calf" width={200} height={200} className=' w-60 rounded-2xl' />
 
                         <h2 className=" font-medium text-2xl ">Mash Feed</h2>

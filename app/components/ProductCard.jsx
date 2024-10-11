@@ -9,8 +9,8 @@ const ProductCard = ({ index, type, name, imgUrl, desc }) => {
 
             <Image src={imgUrl} alt={name} width={200} height={200} className="w-1/3 rounded-2xl" />
 
-            <div className=' w-2/3 flex flex-col gap-4 justify-center items-center text-center'>
-                <h2 className=" font-medium text-xl text-center">{name}</h2>
+            <div className=' w-2/3 flex flex-col gap-4 justify-center items-center text-justify'>
+                <h2 className=" font-medium text-xl text-justify">{name}</h2>
 
                 <p>{desc}</p>
 
