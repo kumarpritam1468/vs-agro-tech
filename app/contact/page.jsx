@@ -33,15 +33,20 @@ const page = () => {
                 <h1 className=' text-6xl font-medium'>Let's Connect</h1>
                 <div className=' flex flex-col'>
                     <h2 className=' text-2xl font-medium'>Email</h2>
-                    <p className=' text-base font-extralight -mt-1'>test-test-test@gmail.com</p>
+                    <p className=' text-base font-extralight -mt-1'>vsagrotech81@gmail.com</p>
                 </div>
                 <div className=' flex flex-col'>
                     <h2 className=' text-2xl font-medium'>Phone</h2>
-                    <p className=' text-base font-extralight -mt-1'>+91 1234567890</p>
+                    <p className=' text-base font-extralight -mt-1'>8249510313(10 am to 5 pm)</p>
                 </div>
                 <div className=' flex flex-col'>
                     <h2 className=' text-2xl font-medium'>Address</h2>
-                    <p className=' text-base font-extralight -mt-1'>Cuttack, Odisha, India</p>
+                    <p className=' text-base font-normal mt-1'>
+                        IDCO Plot NO.1, <br />
+                        Indrani Patna industrial Area post, <br />
+                        Chasapada, <br />
+                        Choudwar, Cuttack 754027
+                    </p>
                 </div>
             </div>
 

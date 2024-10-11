@@ -24,10 +24,10 @@ const page = () => {
                 <Image src={product.imgUrl} alt="Swine Food" width={250} height={450} className=" relative z-30" />
             </motion.div>
 
-            <div className="w-1/2 max-md:w-full pr-12 max-md:pr-6 h-full flex justify-center flex-col gap-6 max-md:text-center max-md:items-center">
+            <div className="w-full pr-12 py-12 max-md:py-6 max-md:px-6 h-full overflow-y-auto flex flex-col gap-6 max-md:text-center max-md:items-center">
                 <motion.h1
                     className=" text-5xl font-medium"
-                    variants={slideUp(0.1)}
+                    variants={slideUp(0.2)}
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
@@ -35,15 +35,19 @@ const page = () => {
                     {product.name}
                 </motion.h1>
 
-                <motion.p
-                    className=' text-2xl max-md:text-xl'
-                    variants={slideUp(0.3)}
+                <motion.div
+                    className=' flex gap-3 flex-col text-xl max-md:text-lg'
+                    variants={slideUp(0.4)}
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
-                    {product.details}
-                </motion.p>
+                    <h2 className=' text-2xl font-semibold max-md:text-xl mt-4'>Details:</h2>
+                    <p>{product.details}</p>
+
+                    <h2 className=' text-2xl font-semibold max-md:text-xl mt-4'>Feeding Process:</h2>
+                    <p>{product.feeding}</p>
+                </motion.div>
             </div>
         </section>
     )

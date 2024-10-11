@@ -31,6 +31,10 @@ const page = () => {
                 viewport={{ once: true }}
             >
                 <h1 className=" text-5xl font-medium">{product.name}</h1>
+                <p>{product.desc}</p>
+                {product.bis && 
+                    <p>{product.bis}</p>
+                }
 
                 <div className="flex flex-col gap-4 py-3">
                     <h2 className=' text-3xl font-medium'>Ingredients:</h2>
