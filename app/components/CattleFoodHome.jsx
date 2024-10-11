@@ -33,6 +33,7 @@ const CattleFoodHome = () => {
                     Cattle
                 </motion.h1>
                 <motion.p
+                className=' max-md:text-xl'
                     variants={slideUp(0.2)}
                     initial={"initial"}
                     whileInView={'animate'}

@@ -38,7 +38,7 @@ const page = () => {
                     viewport={{ once: true }}
                 >
                     {swineFoods.map((product, index) => (
-                        <div className=' flex gap-24 max-md:gap-6 px-20 max-lg:px-8 max-md:px-4 items-center justify-center text-white' key={index}>
+                        <div className=' flex max-md:flex-col gap-24 max-md:gap-6 px-20 max-lg:px-8 max-md:px-4 items-center justify-center text-white' key={index}>
                             <motion.div
                                 className="relative w-fit h-fit max-md:w-3/5 mt-4"
                                 variants={slideRight(0)}
@@ -70,7 +70,7 @@ const page = () => {
                                     viewport={{ once: true }}
                                 >
                                     <h2 className=' text-2xl font-semibold max-md:text-xl mt-4'>Details:</h2>
-                                    <p>{product.details}</p>
+                                    <p className=' max-md:text-xl'>{product.details}</p>
                                 </motion.div>
                             </div>
                         </div>

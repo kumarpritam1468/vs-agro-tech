@@ -34,7 +34,7 @@ const SwineFoodHome = () => {
 
         </motion.h1>
         <motion.p
-        className=' text-center'
+        className=' text-center max-md:text-xl'
           variants={slideUp(0.2)}
           initial={"initial"}
           whileInView={'animate'}
