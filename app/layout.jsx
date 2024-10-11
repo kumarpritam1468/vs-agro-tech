@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
 export const metadata = {
-  title: "VS Agro Tech",
-  description: "Best Cattle Feed, Best Swine Feed, pellet feed, mash feed, A vision to provide healthy and good to the animals, Cuttack, Odisha, India",
+  title: "VS Agrotech | Best Cattle Feed | Best Swine Feed",
+  description: "With a view to provide the best feed at an affordable price the unit was                            established in the year 2022 and serving since then.",
 };
 
 export default function RootLayout({ children }) {

@@ -12,7 +12,7 @@ const page = () => {
             <div className=" h-full w-full overflow-auto">
 
                 <motion.div
-                    className=' flex flex-col gap-2 mt-6 text-white ml-6'
+                    className=' flex flex-col gap-2 mt-6 text-white text-center'
                     variants={slideRight(0)}
                     initial={"initial"}
                     whileInView={'animate'}
@@ -20,80 +20,31 @@ const page = () => {
                 >
                     <h2 className=' text-3xl font-semibold underline text-center'>Pellet Feed</h2>
                 </motion.div>
+                <motion.p
+                    variants={slideRight(0.2)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                    className=' text-2xl mt-6 text-white px-36 max-md:px-6 max-lg:px-12'
+                >
+                    <span className=' font-medium underline pr-1'>Ingredients:</span> Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.
+                </motion.p>
 
                 <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 py-10'
-                    variants={slideRight(0.2)}
+                    variants={slideRight(0.4)}
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
                     {cattleFoods.slice(0, 5).map((item, index) => (
-                        <ProductCard key={index} index={index} type={"cattle"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
+                        <ProductCard key={index} index={index} type={"cattle/pellet"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
                     ))}
                 </motion.div>
 
 
-                <h1 className=' font-semibold underline underline-offset-4 text-4xl mt-6 text-center text-white'>Nutrients Table</h1>
 
-                <div className="overflow-x-auto py-12">
-                    <table className="table bg-white table-zebra rounded-none table-lg max-md:table-sm w-8/12 max-md:w-full mx-auto">
-                        {/* head */}
-                        <thead>
-                            <tr className=' text-lg max-md:text-base text-green-800'>
-                                <th>Nutrients</th>
-                                <th>Royal</th>
-                                <th>Champion</th>
-                                <th>Supreme</th>
-                                <th>Premium</th>
-                                <th>Popular</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {nutrientsTable.map((data, index) => (
-                                <tr key={index}>
-                                    <th> {data.head} </th>
-                                    <td> {data.royal} </td>
-                                    <td> {data.champion} </td>
-                                    <td> {data.supreme} </td>
-                                    <td> {data.premium} </td>
-                                    <td> {data.popular} </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-
-                <h1 className=' font-semibold underline underline-offset-4 text-4xl mt-6 text-center text-white'>Dosage Table</h1>
-
-                <div className="overflow-x-auto py-12">
-                    <table className="table bg-white table-zebra rounded-none table-lg max-md:table-sm w-11/12 max-md:w-full mx-auto">
-                        {/* head */}
-                        <thead>
-                            <tr className=' text-lg max-md:text-base text-green-800 text-center'>
-                                <th>Product</th>
-                                <th>Milk <br /> Production(ltr)</th>
-                                <th>Concentrate <br /> Feed(kg)</th>
-                                <th>Green <br /> Fodder(kg)</th>
-                                <th>Dry <br /> Fodder(kg)</th>
-                                <th>Water(ltr)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {dosesTable.map((data, index) => (
-                                <tr key={index} className=' text-center'>
-                                    <th> {data.head} </th>
-                                    <td> {data.milkProd} </td>
-                                    <td> {data.concentrate} </td>
-                                    <td> {data.grnFodder} </td>
-                                    <td> {data.dryFodder} </td>
-                                    <td> {data.water} </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
             </div>
-        </section>
+        </section >
     )
 }
 

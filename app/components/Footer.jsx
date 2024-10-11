@@ -16,7 +16,7 @@ const Footer = () => {
                     <Image src='/logo.png' alt='Logo' width={100} height={100} />
                     <h1 className=' font-medium text-xl mt-4'>V S Agrotech,</h1>
                     <h2 className=' text-lg'><span className=' font-semibold'>E-mail:</span> vsagrotech81@gmail.com</h2>
-                    <h3 className=' text-lg'><span className=' font-semibold'>Customer helpline:</span> 82495-10313(10 am to 5 pm) </h3>
+                    <h3 className=' text-lg'><span className=' font-semibold'>Customer helpline:</span> 82495-10313 (10 am to 5 pm) </h3>
                     <p className=' text-sm font-normal mt-4'>
                         IDCO Plot NO.1, <br />
                         Indrani Patna industrial Area post, <br />

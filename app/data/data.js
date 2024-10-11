@@ -2,7 +2,7 @@ export const topProducts = [
     {
         id: 0,
         type: "cattle",
-        name: "VSA  Royal[BIS marked]",
+        name: "VSA  Royal",
         imgUrl: "/products/royal.jpg",
         desc: "Rich in by-pass protein and by-pass fat has high TDN for high milk producing cattle. It is best feed for both Cow and Buffalo giving more than 18 ltrs milk"
     },
@@ -55,7 +55,7 @@ export const swineFoods = [
 
 export const cattleFoods = [
     {
-        name: "VSA  Royal[BIS marked]",
+        name: "VSA  Royal",
         imgUrl: "/products/royal.jpg",
         desc: "Rich in by-pass protein and by-pass fat has high TDN for high milk producing cattle. It is best feed for both Cow and Buffalo giving more than 18 ltrs milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",
@@ -76,7 +76,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Champion[BIS marked]",
+        name: "VSA  Champion",
         imgUrl: "/products/champion.jpg",
         desc: "Having high protein and fat is best for Cow and Buffalo giving 12-20 ltrs milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",
@@ -97,7 +97,7 @@ export const cattleFoods = [
         ]
     },
     {
-        name: "VSA  Supreme[BIS marked]",
+        name: "VSA  Supreme",
         imgUrl: "/products/supreme.jpg",
         desc: "For the Cows giving 8-12 ltr milk",
         bis: "BIS certificate under IS:2052:2009, CM/L-5200121874",

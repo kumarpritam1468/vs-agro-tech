@@ -22,7 +22,7 @@ const SwineFoodHome = () => {
         <Image src='/pigs.jpg' alt="Calf" width={450} height={450} className=" relative z-30" />
       </motion.div>
 
-      <div className=" w-1/2 max-md:w-4/5 flex flex-col gap-6 max-md:text-center max-md:items-center">
+      <div className=" w-1/2 max-md:w-4/5 flex flex-col gap-6 text-center items-center">
         <motion.h1
           className=" text-5xl font-medium"
           variants={slideUp(0)}
@@ -34,6 +34,7 @@ const SwineFoodHome = () => {
 
         </motion.h1>
         <motion.p
+        className=' text-center'
           variants={slideUp(0.2)}
           initial={"initial"}
           whileInView={'animate'}

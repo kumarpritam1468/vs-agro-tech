@@ -21,16 +21,36 @@ const page = () => {
                     <h2 className=' text-3xl font-semibold underline text-center'>Mash Feed</h2>
                 </motion.div>
 
-                <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 py-10'
+                <motion.p
                     variants={slideRight(0.2)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                    className=' text-2xl mt-6 text-white px-36 max-md:px-6 max-lg:px-12'
+                >
+                    <span className=' font-medium underline pr-1'>Ingredients:</span> Maize, Oil cakes, Chokad, Chunni, DORB, Bran, Calcium, Salt, Mineral mixture, Multi-vitamins, Calcium, Phosphorus, etc.
+                </motion.p>
+
+                <motion.p
+                    variants={slideRight(0.2)}
+                    initial={"initial"}
+                    whileInView={'animate'}
+                    viewport={{ once: true }}
+                    className=' text-xl font-semibold mt-2 text-center text-white px-36 max-md:px-6 max-lg:px-12'
+                >
+                    We can also produce customized feed as per the requirement of cow
+                </motion.p>
+                <motion.div className=' flex max-md:flex-col justify-center items-center flex-wrap gap-10 mt-6'
+                    variants={slideRight(0.4)}
                     initial={"initial"}
                     whileInView={'animate'}
                     viewport={{ once: true }}
                 >
                     {cattleFoods.slice(5, 7).map((item, index) => (
-                        <ProductCard key={index} index={index+5} type={"cattle"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
+                        <ProductCard key={index} index={index + 5} type={"cattle/mash"} name={item.name} imgUrl={item.imgUrl} desc={item.desc} />
                     ))}
                 </motion.div>
+
             </div>
         </section>
     )

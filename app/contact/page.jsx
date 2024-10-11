@@ -37,7 +37,7 @@ const page = () => {
                 </div>
                 <div className=' flex flex-col'>
                     <h2 className=' text-2xl font-medium'>Phone</h2>
-                    <p className=' text-base font-extralight -mt-1'>8249510313(10 am to 5 pm)</p>
+                    <p className=' text-base font-extralight -mt-1'>8249510313 (10 am to 5 pm)</p>
                 </div>
                 <div className=' flex flex-col'>
                     <h2 className=' text-2xl font-medium'>Address</h2>
@@ -56,7 +56,7 @@ const page = () => {
                     <input type="email" placeholder='E-Mail' required className='contact-input' name='email' />
                     <textarea placeholder='Message' rows={6} required className='contact-input' name='message' />
                     <div className=' w-5/6 max-lg:w-full'>
-                        <button className=' w-full bg-green-500 text-white font-medium py-2 mt-2 rounded-r-full rounded-bl-full transition-all duration-300 ease-in-out hover:rounded-tl-full hover:bg-white hover:text-green-600 flex gap-2 justify-center items-center' type='submit'>
+                        <button className=' mx-auto w-40 bg-green-500 text-white font-medium py-2 mt-2 transition-all duration-300 ease-in-out rounded-3xl hover:bg-white hover:text-green-600 flex gap-2 justify-center items-center' type='submit'>
                             {loading ? 'Sending...' : 'Send'}
                         </button>
                     </div>
