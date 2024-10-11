@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400
 
 export const metadata = {
   title: "VS Agro Tech",
-  description: "With a vision to provide healthy and good to the animals,  Go seva learnt from the teaching of lord Krishna,urea and chemical based feed",
+  description: "Best Cattle Feed, Best Swine Feed, pellet feed, mash feed, A vision to provide healthy and good to the animals, Cuttack, Odisha, India",
 };
 
 export default function RootLayout({ children }) {
