@@ -17,7 +17,7 @@ const Hero = () => {
                     VS AGROTECH
                 </motion.h1>
                 <motion.p
-                    className=" text-3xl max-xl:text-[1.3rem] text-justify"
+                    className=" text-3xl max-xl:text-[1.3rem] text-center"
                     variants={slideRight(0.2)}
                     initial={"initial"}
                     animate={"animate"}
@@ -45,11 +45,11 @@ const Hero = () => {
               <FaArrowRight className="arr-1" />
             </a> */}
 
-                    <Link class="btn3" href="/products">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
+                    <Link className="btn3" href="/products">
+                        <span className="circle" aria-hidden="true">
+                            <span className="icon arrow"></span>
                         </span>
-                        <span class="button-text">Discover All</span>
+                        <span className="button-text">Discover All</span>
                     </Link>
                 </motion.div>
             </div>
